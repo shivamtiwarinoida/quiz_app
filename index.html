@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="headin">
+        <h2>Quiz App</h2>
+    </div>
+    <div class="main">
+        <div class="box" id="box">
+            <h3 id="quesbox">Q1 . This is a dummy Question?</h3>
+            <div class="row">
+                <input type="radio" value="a" id="op1" name="option" class="option" />
+                <label for="op1">Option A</label>
+            </div>
+            <div class="row">
+                <input type="radio" value="b" id="op2" name="option" class="option" />
+                <label for="op2">Option B</label>
+            </div>
+            <div class="row">
+                <input type="radio" value="c" id="op3" name="option" class="option" />
+                <label for="op3">Option C</label>
+            </div>
+            <div class="row">
+                <input type="radio" value="d" id="op4" name="option" class="option" />
+                <label for="op4">Option D</label>
+            </div>
+            <button class="btn" onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <div class="res" id="res2">
+            <h3>Thanks !</h3>
+            <p>
+                Thank you for giving the quiz you scored <span id="res">0</span>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <h5>made by am_shiv</h5>
+        <h5>email:shivamtiwariastudent@gmail.com</h5>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

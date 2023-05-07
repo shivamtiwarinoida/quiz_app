@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("img3.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(7, 6, 9);
+    color: whitesmoke;
+}
+
+
+.brand{
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.brand:hover{
+    text-decoration: underline;
+}
+
+.navlist ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 1rem;
+    color: aliceblue;
+}
+
+.navlist ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+
+.navlist ul li button{
+    background-color: rgb(3, 137, 254);
+    border:0.1rem solid blue ;
+    border-radius: 0.7rem;
+}
+
+.navlist ul li img{
+    width:1.5rem;
+}
+
+.navbar li:hover{
+    background-color: rgb(44, 2, 254);
+    cursor: pointer;
+}
+
+
+
+.toggle{
+    position: absolute;
+    top:0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+
+.toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem auto;
+}
+
+.contain button{
+    color: white;
+    background-color: black;
+    box-shadow: 0.8rem 0.8rem 0.9rem rgb(247, 23, 221);
+    font-size: 1.3rem;
+    border: 0.3rem solid black;
+    border-radius:0.4rem ;
+    margin: 0.4rem;
+    padding:1.4rem;
+}
+
+.contain button:hover{
+    background-color:rgb(29, 29, 254);
+    border:0.3rem solid blue;
+}
+
+.input{
+    margin:0.4rem;
+    padding: 1.3rem;
+    border: 0.3rem solid black;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+}
+
+
+.foot{
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    height:20vh;
+}
+
+
+.foot:hover{
+    background-color: blue;
+}
+
+
+.overlay{
+    background-color:rgba(160, 155, 155, 0.4);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.showover{
+    opacity: 1;
+}
+
+.loginf{
+    width:430px;
+    background-color:rgb(66, 41, 253);
+    border: 0.2rem solid rgb(2, 28, 196);
+    border-radius: 0.6rem;
+    padding:2.8rem;
+    transition: 2s;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top:-50%;
+    box-shadow: 0.8rem 0.8rem 0.8rem rgb(252, 3, 252);
+}
+
+.showlogin{
+    top:50%;
+}
+
+.loginf span{
+    position: absolute;
+    right:0px;
+    top:0px;
+    font-size: 1.2rem;
+    border: 0.1rem solid rgb(253, 2, 2);
+    border-radius: 0.1rem;
+    background-color: rgb(252, 16, 16);
+    color: aliceblue;
+    padding:0.2rem 0.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.loginf span:hover{
+    background-color:rgb(3, 250, 3);
+    border-color:green;
+}
+
+.form1{
+    align-items: center;
+}
+
+.loginf input{
+    width:100%;
+    padding:.7rem;
+}
+
+.loginf .attr{
+    margin:0.6rem;
+}
+
+.loginf  .he1{
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.loginf .btn{
+    background-color: black;
+    color: aliceblue;
+    padding: 0.6rem 2rem;
+    border-radius: 0.8rem ;
+    align-items: center;
+    box-shadow: 0.7rem 0.7rem 0.7rem rgb(253, 1, 253);
+}
+
+.loginf .btn:hover{
+    background-color: blue;
+    border-color: blue;
+    box-shadow: 0.7rem 0.7rem 0.7rem aqua;
+}
+
+.loginf .he1{
+    align-items: center;
+}
+
+.loginf img{
+    width:2.4rem;
+}
+
+
+
+.break1{
+    overflow-wrap: break-word;
+}
+
+.break1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:440px) {
+    .toggle {
+        display: flex;
+    }
+
+    .loginf{
+        width:auto;
+    }
+    
+    .navlist {
+        display: none;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlist ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navlist ul li a{
+        padding: 0.5rem;
+    }
+
+    .slide{
+        width:auto;
+    }
+}
